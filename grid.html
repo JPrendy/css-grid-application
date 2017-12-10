@@ -1,0 +1,60 @@
+<!--Tutorial of going over css gird for more points
+    go to the following links https://medium.freecodecamp.org/learn-css-grid-in-5-minutes-f582e87b1228
+    and https://medium.freecodecamp.org/how-to-make-your-html-responsive-by-adding-a-single-line-of-css-2a62de81e431-->
+
+<!Doctype html>
+<html>
+    <style>
+    .wrapper{
+    display: grid;
+    grid-gap: 5px;
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+    grid-template-rows: repeat(2, 100px);
+    }
+
+   /* .container {
+    display: grid;
+    grid-template-columns: repeat(3, 100px);
+    grid-template-rows: repeat(2, 50px);
+} */
+
+    .item1 {
+    grid-column-start: 1;
+    grid-column-end: 2;
+    background-color: red;
+    text-align: center;
+}
+
+    .item2 {
+    grid-column-start: 3;
+    grid-column-end: 4;
+    background-color: pink;
+    text-align: center;
+}
+
+.item3 {
+    grid-column-start: 2;
+    grid-column-end: 3;
+    background-color: yellow;
+    text-align: center;
+}
+
+.item4 {
+    grid-row-start: 2;
+    grid-row-end: 4;
+    background-color: orange;
+    text-align: center;
+}
+
+    </style>
+<body>
+<div class="wrapper">
+  <div class="item1">1</div>
+  <div class="item2">2</div>
+  <div class="item3">3</div>
+  <div class="item4">4</div>
+  
+</div>
+</body>
+</html>
+
